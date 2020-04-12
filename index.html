@@ -1,0 +1,106 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<title>Slagalica</title>
+</head>
+<body onload="OnLoadMessage()">
+    <div id='container'>
+        <div>
+            <p onclick="NewGame()" id='newGame'>New game</p>
+        </div>
+
+        <div>
+            <ul id="selectMark">
+                <li><img src="images/tref.png" id="tref" onclick="GetMark(id)"/></li>
+                <li><img src="images/karo.png" id="karo" onclick="GetMark(id)"/></li>
+                <li><img src="images/pik.png" id="pik" onclick="GetMark(id)"/></li>
+                <li><img src="images/herc.png" id="herc" onclick="GetMark(id)"/></li>
+                <li><img src="images/moon.png" id="moon" onclick="GetMark(id)"/></li>
+                <li><img src="images/star.png" id="star" onclick="GetMark(id)"/></li>
+            </ul>
+        </div>
+
+        <div>
+            <table id="userTable">
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field00" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field01" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field02" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field03" /></td>
+                </tr>
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field10" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field11" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field12" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field13" /></td>
+                </tr>
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field20" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field21" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field22" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field23" /></td>
+                </tr>
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field30" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field31" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field32" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field33" /></td>
+                </tr>
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field40" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field41" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field42" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field43" /></td>
+                </tr>
+                <tr>
+                    <td class="neutral"><img src="images/default.png" id="field50" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field51" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field52" /></td>
+                    <td class="neutral"><img src="images/default.png" id="field53" /></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="userResultTable">
+                <tr>
+                    <td class="neutral" id="fieldResult00"></td>
+                    <td class="neutral" id="fieldResult01"></td>
+                    <td class="neutral" id="fieldResult02"></td>
+                    <td class="neutral" id="fieldResult03"></td>
+                </tr>
+                <tr>
+                    <td class="neutral" id="fieldResult10"></td>
+                    <td class="neutral" id="fieldResult11"></td>
+                    <td class="neutral" id="fieldResult12"></td>
+                    <td class="neutral" id="fieldResult13"></td>
+                </tr>
+                <tr>
+                    <td class="neutral" id="fieldResult20"></td>
+                    <td class="neutral" id="fieldResult21"></td>
+                    <td class="neutral" id="fieldResult22"></td>
+                    <td class="neutral" id="fieldResult23"></td>
+                </tr>
+                <tr>
+                    <td class="neutral" id="fieldResult30"></td>
+                    <td class="neutral" id="fieldResult31"></td>
+                    <td class="neutral" id="fieldResult32"></td>
+                    <td class="neutral" id="fieldResult33"></td>
+                </tr>
+                <tr>
+                    <td class="neutral" id="fieldResult40"></td>
+                    <td class="neutral" id="fieldResult41"></td>
+                    <td class="neutral" id="fieldResult42"></td>
+                    <td class="neutral" id="fieldResult43"></td>
+                </tr>
+                <tr>
+                    <td class="neutral" id="fieldResult50"></td>
+                    <td class="neutral" id="fieldResult51"></td>
+                    <td class="neutral" id="fieldResult52"></td>
+                    <td class="neutral" id="fieldResult53"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
